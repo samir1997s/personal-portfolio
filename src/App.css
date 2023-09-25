@@ -1,3 +1,43 @@
+/* cutom fonts */
+@font-face {
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Book.ttf');
+  font-weight: 400;
+}
+
+/* defualt css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+body{
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #121212 !important;
+  color: #fff !important;
+  font-family: 'Centra', sans-serif !important;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
 .App {
   text-align: center;
 }
@@ -36,3 +76,269 @@
     transform: rotate(360deg);
   }
 }
+/************ Navbar Css ************/
+.nav-wrapper{
+  text-align: center ;
+}
+.nav-c{
+  margin: auto;
+  display: inline-block;
+  position: sticky;
+} 
+.navbar-link{
+  color: hsla(0,0%,100%,.55) !important;
+  margin-left: 10px;
+}
+.navbar-link:hover{
+  color: #fff  !important;
+}
+.navbar-link.active{
+  color: #fff !important;
+}
+/************* social icons ************/
+.social-icon {
+    display: inline-block;
+    
+}
+.social-icon a {
+    width: 42px;
+    height: 42px;
+    background: rgba(217, 217, 217, 0.1);
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: 6px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.social-icon a::before {
+    content: "";
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: scale(0);
+	transition: 0.3s ease-in-out;
+}
+.social-icon a:hover::before {
+    transform: scale(1);
+}
+.social-icon a img {
+	width: 40%;
+	z-index: 1;
+	transition: 0.3s ease-in-out;
+}
+.social-icon a:hover img {
+	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+
+
+
+/************ Banner Css ************/
+/************ home ************/
+.home-wrpper{
+  width: 100%;
+  padding-bottom: 155px;
+}
+.home-container{
+  padding: 20px; 
+  position: relative;
+  width: 80%;
+  height: 200px;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  border: hsla(0,0%,100%,.55) 0.5px solid;
+  top: 30%;
+  flex-direction: column;
+  animation: myborder 5s infinite alternate;;
+}
+.my-name{
+  animation: stroke 5s infinite alternate;
+  font-size: 50px;
+}
+.my-name:hover{
+  font-size: 51px;
+  transition: 0.4s ease-in-out;
+}
+.hr{
+  margin: 20px 20px 0 20px;
+  animation: stroke 5s infinite alternate;
+}
+@media only screen and (max-width: 600px)  {
+ 
+  .my-name{
+  animation: stroke 5s infinite alternate;
+  font-size: 25px;
+
+}
+  .my-name:hover{
+    font-size: 26px;
+    transition: 0.4s ease-in-out;
+  }
+}
+
+
+
+@keyframes stroke {
+	0%   {
+		/* color: #fff; */
+    text-shadow: none;
+  
+  
+  
+	}
+	
+	100% {
+		/* color: red; */
+    text-shadow: 0 0 4px #dbd1d1, 0 0 15px #5271ff; 
+	}
+}
+/* glow 2.5s ease-in-out infinite alternate; */
+@keyframes myborder {
+	0%   {
+		border: hsla(0,0%,100%,.55) 0.5px solid;
+    
+	}
+	
+	100% {
+		border: hsla(0, 45%, 32%, 0.55) 0.5px solid;
+	}
+}
+
+/************ skills ************/
+
+.skills{
+  margin-top: 80px;
+}
+
+.title{
+  font-size: 40px;
+  animation: stroke 5s infinite alternate;
+}
+.hr-skill{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.profile{
+  margin-top: 20px;
+}
+.skills-grid{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+  margin: 30px auto 0px auto ;
+  justify-content: center;
+}
+
+.skill-card{
+  width: 200px;
+  margin-right: 5px;
+  background-color: #282c34;
+  border: #dbd1d1 solid 1px;
+  border-radius: 10px;
+  margin: 5px;
+}
+.skill-card:hover{
+  
+  cursor: pointer;
+  background-color: #374f7e;
+  border: #979090 solid 1px;
+ 
+}
+
+.skill-wrapp{
+  padding: 5px;
+  text-align: start;
+}
+
+.subtitle{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/************ projects ************/
+ .my-row{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  text-align: start;
+  align-items: flex-start ;
+  justify-content: center;
+  width: 100%;
+ }
+
+ .project-list{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+ 
+ }
+ .project-card{
+  width: 100%;
+ }
+
+ .p-details{
+  text-wrap: wrap;
+  width: 500px;
+  margin-right: 40px;
+ }
+
+ .title-href{
+  color: #fff;
+  text-decoration: none;
+  
+ }
+
+ .title-href:hover{
+  text-shadow: 0 0 4px #dbd1d1, 0 0 15px #5271ff; 
+
+ }
+
+ @media only screen and (max-width: 900px)  {
+ 
+  .my-row {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.responsive-mb-2 {
+  margin-bottom: 2rem;
+  width: 90%;
+  text-align: start;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+ .p-details{
+  width: 100%;
+}
+ 
+}
+
+
+ /************ footer ************/
+
+.footer{
+  position: fixed;
+  bottom: 0px;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+  background-color: #121212;
+  width: 100%;
+  color: hsla(0,0%,100%,.55) ;
+}
+
