@@ -94,6 +94,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .navbar-link.active{
   color: #fff !important;
+  border: 1px solid #ccc;
 }
 /************* social icons ************/
 .social-icon {
@@ -106,7 +107,7 @@ h1,h2,h3,h4,h5,h6{
     background: rgba(217, 217, 217, 0.1);
     display: inline-flex;
     border-radius: 50%;
-    margin-right: 6px;
+    margin-right: 8px;
     align-items: center;
     justify-content: center;
     line-height: 1;
@@ -151,7 +152,7 @@ h1,h2,h3,h4,h5,h6{
   margin-top: 150px;
   margin-left: auto;
   margin-right: auto;
-  border: hsla(0,0%,100%,.55) 0.5px solid;
+  border: hsla(0,0%,100%,.55) 0.8px solid;
   top: 30%;
   flex-direction: column;
   animation: myborder 5s infinite alternate;;
@@ -249,7 +250,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .skill-card:hover{
   
-  cursor: pointer;
+  
   background-color: #374f7e;
   border: #979090 solid 1px;
  
@@ -303,6 +304,12 @@ h1,h2,h3,h4,h5,h6{
   text-shadow: 0 0 4px #dbd1d1, 0 0 15px #5271ff; 
 
  }
+ .frame {
+  
+  border: 3px solid #ccc;
+  
+  
+}
 
  @media only screen and (max-width: 900px)  {
  
