@@ -7,6 +7,24 @@ import {Footer} from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const root2 = ReactDOM.createRoot(document.getElementById('root2'));
+
+function createSnowflakes() {
+  const snowflakesContainer = document.querySelector('.snowflakes');
+  
+  for (let i = 0; i < 50; i++) {
+const wdthandheight = Math.random();
+    const snowflake = document.createElement('div');
+    snowflake.className = 'snowflake';
+    snowflake.style.left = `${Math.random() * 100}%`;
+    snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`;
+    snowflake.style.animationDelay = `${Math.random()}s`;
+    snowflake.style.opacity = `${Math.random()}`;
+    snowflake.style.width = `${wdthandheight * 15}px`;
+    snowflake.style.height = `${wdthandheight * 15}px`;
+    snowflakesContainer.appendChild(snowflake);
+  }
+}
+createSnowflakes();
 root.render(
   <React.StrictMode>
     <App />

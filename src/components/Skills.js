@@ -24,6 +24,9 @@ export const Skills = () => {
     },
     {
         title: "PHP",
+    },
+    {
+        title: "Odoo ERP",
     }
 ];
     return (
@@ -34,7 +37,7 @@ export const Skills = () => {
                 My Skills 🚀
                     </p>
                     <p className="profile">
-          I primarily specialise in Applications development.
+                    I Primarily Specialise In Applications Development.
           </p>
                     <hr className="hr-skill"></hr>
                 </div>
